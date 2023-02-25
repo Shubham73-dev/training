@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        #uniqueHeadingTag{
+            background-color: red;
+            color: white;
+        }
+        .democlass{
+            background-color: blue !important;
+            color: white;
+            font-size: 35px;
+            font-family: cursive;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .secondclass{
+            background-color: brown !important;
+        }
+        h2{
+            background-color: rebeccapurple;
+            color: wheat;
+        }
+    </style>
+</head>
+<body>
+    <!-- id's and classes are two selectors on CSS -->
+    <!-- ID
+        * id for an elemnt should be uniques in a web page
+        * we cannot use multiple id for an element
+        * id has the most preference
+        * id is represented by #
+     -->
+     <!-- class
+        *class can be reused multiple times, i.e. many elemnts can be posessing same class
+        * we can assign multiples classes to the same element
+        * class i srepresented by dot (.)
+
+     -->
+    <h2 id="uniqueHeadingTag" class="secondclass">this is heading</h2>
+    <h2 class="democlass secondclass">this is heading</h2>
+    <h2>this is heading</h2>
+    <h2>this is heading</h2>
+</body>
+</html>
