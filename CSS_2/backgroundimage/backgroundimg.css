@@ -1,0 +1,42 @@
+/* universal operator (*) */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+body{
+    /* vh unit - viewport height */
+    /* vw unit - viewport width */
+    background-image: url('../../assets/Batman_image.jpg');
+    background-size: 100% 100%;
+    /* backgroundsize 'contain' adjusts background image according to the elemnt height */
+    /* background-size: contain; */
+    /* backgroundsize 'cover' adjusts background image according to the elemnt width */
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+div{
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 400px;
+    /* background-attachment: fixed; */
+}
+.div_1{
+    background-image: url('https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?cs=srgb&dl=pexels-garvin-st-villier-3972755.jpg&fm=jpg');
+}
+.div_2{
+    background-image: url('https://carsalesbase.com/wp-content/uploads/2020/07/US-sports-car-sales-Chevrolet_Corvette.jpg');
+}
+.div_3{
+    background-image: url('https://wallpaperaccess.com/full/16524.jpg');
+}
+.div_4{
+    background-image: url('https://cdni.autocarindia.com/ExtraImages/20211215012154_Toyota%20sports%20car.jpg');
+}
+.div_5{
+    background-image: url('https://static.tnn.in/photo/msid-93967933/93967933.jpg');
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinators</title>
+    <style>
+        /* .green{
+            background-color: green;
+        } */
+        /* space operator-- descendant selector */
+        /* '>' operator symbolises parent */
+        /* '+' operator symbolises nearest next sibling */
+        /* '~' (tilde) operator symbolises all sibling */
+        #parent h1{
+            background-color: cadetblue;
+        }
+        #parent p{
+            background-color: brown;
+        }
+        #parent_1,#parent_2{
+            background-color: brown;
+        }
+        #parent_1>h1{
+            background-color: green;
+        }
+        #parent_1 + p{
+            background-color: red;
+            color: yellow;
+        }
+        #parent_1 ~ p{
+            background-color: rebeccapurple;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- div.class_$*3 generates three div with classes--> 
+    <div id="parent">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam est nisi at molestiae repudiandae quibusdam, iure illo hic pariatur temporibus, voluptates sunt, ipsum tenetur sapiente modi dolorem labore odit veniam.</p>
+        <h1>h1 tag</h1>
+        <h1>h1 tag</h1>
+        <h2>h2 tag</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio obcaecati dolor consequatur placeat neque possimus laborum aperiam? Architecto voluptates eligendi ut quisquam obcaecati, id suscipit, qui fugit necessitatibus cum voluptatem.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, aliquam, mollitia explicabo officia praesentium, ad eius sint corrupti facere distinctio excepturi modi a sit deserunt impedit sequi. Autem, accusamus quasi.</p>
+    <div id="parent_1">
+        <h1>this is headings</h1>
+        <h1>this is headings</h1>
+        <h1>this is headings</h1>
+    </div>
+
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt at odit ipsam eum, vero soluta sit alias nihil deserunt explicabo. Similique veniam quae ipsam. Veniam quibusdam quisquam aliquid illum magni.</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim architecto placeat consequatur, minus autem explicabo est veniam delectus officia illo non debitis reiciendis ratione harum quam sapiente quas obcaecati dignissimos.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim architecto placeat consequatur, minus autem explicabo est veniam delectus officia illo non debitis reiciendis ratione harum quam sapiente quas obcaecati dignissimos.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim architecto placeat consequatur, minus autem explicabo est veniam delectus officia illo non debitis reiciendis ratione harum quam sapiente quas obcaecati dignissimos.</p> -->
+
+    <div id="parent_2">
+        <h1>this is headings</h1>
+        <h1>this is headings</h1>
+        <h1>this is headings</h1>
+    </div>
+
+</body>
+</html>

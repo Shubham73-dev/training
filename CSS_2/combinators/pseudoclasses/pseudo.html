@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <!-- pseudo means false, so pseudo classes no such classes exists. css gives by default  -->
+    <!-- pseduo classes always be applied on element with '::' -->
+    <style>
+        ul>:first-child{
+            background-color: red;
+        }
+        ul>:last-child{
+            background-color: green;
+        }
+        ul>:nth-child(7){
+            background-color: rebeccapurple;
+        }
+        /* ul>:nth-child(5n){
+            background-color: green;
+            color: white;
+        } */
+        /* ul>li{
+            border-bottom: 2px solid red;
+        }
+        ul>:last-child{
+            border-bottom: none;
+        } */
+        ul>:not(:last-child){
+            border-bottom: 2px solid red;
+        }
+        /* ul>:first-child::hover{
+            background-color: crimson;
+            color: white;
+            font-size: 32px;
+        } */
+        ul>:first-child:hover{
+            background-color:green;
+            color: white;
+            font-size: 32px;
+            font-family: cursive;
+        }
+        a::before{
+            content: 'before a tag';
+        }
+        a::after{
+            content: 'after a tag';
+        }
+        a:link {
+        color: #FF0000;
+        }
+        
+      /* visited link */
+      a:visited {
+        color: #00FF00;
+      }
+      
+      /* mouse over link */
+      a:hover {
+        color: #FF00FF;
+      }
+      
+      /* selected link */
+      a:active {
+        color: #0000FF;
+      }
+      #checkedbox{
+        accent-color: pink;
+        /* color: red;
+        background-color: green; */
+      }
+      #inp_text::placeholder{
+        color: red;
+      }
+      #inp_text{
+        outline: none;
+        border: none;
+      }
+      #inp_text:focus{
+        /* border: 2px solid red; */
+        /* outline: 2px solid red; */
+        outline: none;
+        border: none;
+      }
+      /* #demobtn:disabled{
+        background-color: red;
+      } */
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- <ul>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+        <li>this is a list item</li>
+    </ul> -->
+    <!-- <i class="fa-solid fa-house"></i>
+    <a target="_blank" href="https://www.wikipedia.org/">plez visit this link and see color effect using pseudo class</a> -->
+    <!-- <br> -->
+    <!-- <a target="_blank" href="https://www.snapdeal.com/products/mens-footwear-sports-shoes">plez visit this link and see color effect using pseudo class</a> -->
+    <a href="https://www.w3schools.com/css/css_pseudo_classes.asp">this is anchor tag</a>
+        <input type="checkbox" name="" id="checkedbox">
+    <input type="text" placeholder="type your name here" id="inp_text">
+    <button disabled id="demobtn">click</button>
+</body>
+</html>
