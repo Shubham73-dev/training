@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .col{
+            width: 45%;
+        }
+        .col_1{
+            background-color: lightblue;
+            float: left;
+            /* width: 45%; */
+        }
+        .col_2{
+            background-color: lightcoral;
+            float: left;
+            /* width: 45%; */
+        }
+        .col_3{
+            background-color: brown;
+            color: white;
+        }
+        .blank{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.col.col_$*2 -->
+    <div class="row">
+        <div class="col col_1">
+            <h1>DIV 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo necessitatibus eum perferendis animi. Fuga eius porro suscipit ipsum praesentium? Minima accusantium, sunt similique consequuntur quam porro dolore tenetur dolorem.</p>
+        </div>
+        <div class="col col_2">
+            <h1>DIV 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo necessitatibus eum perferendis animi. Fuga eius porro suscipit ipsum praesentium? Minima accusantium, sunt similique consequuntur quam porro dolore tenetur dolorem.</p>
+        </div>
+        <div class="blank"></div>
+    </div>
+    <!-- this below element is not to be floated -->
+    <div class="col_3">
+        <h1>DIV 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo iure assumenda neque sapiente ipsa eius natus dolorem dolores ab veniam reprehenderit, officiis beatae pariatur a magnam nemo aspernatur ullam!</p>
+    </div>
+</body>
+</html>
