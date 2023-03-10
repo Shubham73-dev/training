@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alignment</title>
+    <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
+        .row::after{
+           display: block;
+           content: '';
+           clear: both; 
         }
         .col{
-            width: 45%;
+            width: 50%;
         }
         .col_1{
-            background-color: lightblue;
+            background-color: darkblue;
+            color: white;
             float: left;
-            /* width: 45%; */
         }
         .col_2{
-            background-color: lightcoral;
-            float: left;
-            /* width: 45%; */
-        }
-        .col_3{
             background-color: brown;
             color: white;
-        }
-        .blank{
-            clear: both;
+            float: right;
         }
     </style>
 </head>
 <body>
-    <!-- div.col.col_$*2 -->
     <div class="row">
         <div class="col col_1">
             <h1>DIV 1</h1>
@@ -43,13 +36,6 @@
             <h1>DIV 2</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quo necessitatibus eum perferendis animi. Fuga eius porro suscipit ipsum praesentium? Minima accusantium, sunt similique consequuntur quam porro dolore tenetur dolorem.</p>
         </div>
-        <div class="blank"></div>
     </div>
-    
-    <!-- this below element is not to be floated -->
-    <!-- <div class="col_3">
-        <h1>DIV 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti explicabo iure assumenda neque sapiente ipsa eius natus dolorem dolores ab veniam reprehenderit, officiis beatae pariatur a magnam nemo aspernatur ullam!</p>
-    </div> -->
 </body>
 </html>

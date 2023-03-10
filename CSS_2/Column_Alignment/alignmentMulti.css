@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    letter-spacing: 2px;
+    /* color: white; */
+    /* background-color: lightcyan; */
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.col{
+    height: 300px;
+}
+.bg-dark{
+    background-color: darkblue;
+}
+.bg-light{
+    background-color: lightcoral;
+}
+.bg-differ{
+    background-color: blueviolet;
+}
+.w-33{
+    width: 33.3333333333%;
+}
+.w-50{
+    width: 50%;
+}
+.w-20{
+    width: 20%;
+}
+.w-25{
+    width: 25%;
+}
+.w-16{
+    width: 16.6666666667%;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}

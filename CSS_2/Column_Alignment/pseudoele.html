@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Element</title>
+    <style>
+        /* pseudo means false */
+        /* before psedo element will act as an first child */
+        .demo::before{
+            content: 'This is a first Child';
+            background-color: brown;
+            color: white;
+            font-family: cursive;
+            letter-spacing: 2px;
+            display: block;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        /* after-psedo element will act as an last child */
+        .demo::after{
+            content: 'This is the last child';
+            background-color: brown;
+            color: white;
+            font-family: cursive;
+            letter-spacing: 2px;
+            display: block;
+            font-weight: bold;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <h2>This is an element second</h2>
+        <h3>This is an element third</h3>
+        <h4>This is an element fourt</h4>
+    </div>
+</body>
+</html>
