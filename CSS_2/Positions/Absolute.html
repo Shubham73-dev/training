@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 30px;
+            font-family: cursive;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        #parent{
+            background-color: darkcyan;
+            padding: 14px;
+        }
+        .child{
+            height: 100px;
+        }
+        /* element with high value of z-index will be displayed with high priority */
+        .child_one{
+            background-color: lightcoral;
+            
+        }
+        .child_two{
+            background-color: darkblue;
+           
+        }
+        .child_three{
+            background-color: blueviolet;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        Parent
+        <div class="child child_one">Child One</div>
+        <div class="child child_two">Child Two</div>
+        <div class="child child_three">Child Three</div>
+    </div>
+</body>
+</html>
