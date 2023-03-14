@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+            font-family: cursive;
+        }       
+        div{
+            width: 100%;
+        }
+        .parent{
+            background-color: darkcyan;
+            border: 2px solid black;
+            height: 250px;
+            position: relative;
+        }
+        .child{
+            background-color: blueviolet;
+            height: 200px;
+            /* position: absolute; */
+
+        }
+        .grandChild{
+            background-color: coral;
+            height: 150px;
+            /* position: relative; */
+
+        }
+        .greatGrandChild{
+            background-color: crimson;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        parent
+        <div class="child">
+            child
+            <div class="grandChild">
+                grandchild
+                <div class="greatGrandChild">
+                    greatGrandChild this is an absolute element
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
