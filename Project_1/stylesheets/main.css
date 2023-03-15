@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.row::after{
+    content: '';
+    display: block; 
+    clear: both;  
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+/* custom css starts from here */
+/* css for header starts from here */
+#header .logo{
+    width: 20%;
+}
+.headerConatiner{
+    padding: 1rem;
+}
+.logo img{
+    /* width: 120px; */
+    height: 103.200px;
+}
+.searchBar{
+    width: 45%;
+    padding: 10px;
+}
+.searchBar input[type="text"]{
+    height: 48px;
+    width: 500px;
+    padding: 0 9px;
+}
+.searchBar button{
+    height: 50px;
+    width: 100px;
+    color: white;
+    background-color: #0687C0;
+    margin-left: -6px;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* css for header ends here */
