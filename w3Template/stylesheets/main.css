@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.img-adj{
+    height: 100%;
+    width: 100%;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+
+/* header css starts here */
+#header{
+    border-bottom: 1px solid #ccc;
+}
+.headerConatiner{
+    padding: 8px 16px;
+}
+.navigationAnchor{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 4px;
+    padding: 8px 16px;
+    display: inline-block;
+}
+.navigationAnchor:hover {
+    background-color: #ccc;
+}
+/* header css ends here */
+
+/* first section css starts here */
+.banner{
+    background-image: url('../assets/images/hamburger.jpg');
+    height: 800px;
+    position: relative;
+}
+.banner h1{
+    opacity: 0.6;
+    letter-spacing: 5px;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    position: absolute;
+    bottom: 6%;
+    left: 3%;
+}
+/* first section css ends here */
+
+/* second section css starts here */
+.w-45{
+    width: 45%;
+}
+.secondSectionContainer{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.imageDiv{
+    padding: 12px 24px;
+}
+.imageDiv img{
+   opacity: 0.75;
+}
+/* second section css ends here */
+
