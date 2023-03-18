@@ -1,7 +1,7 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-}
+} */
 a{
     text-decoration: none;
 }
@@ -20,7 +20,12 @@ a{
 .right{
     float: right;
 }
-
+h1{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 5px;
+}
 /* header css starts here */
 #header{
     border-bottom: 1px solid #ccc;
@@ -61,16 +66,82 @@ a{
 .w-45{
     width: 45%;
 }
-.secondSectionContainer{
-    width: 80%;
+.sectionsWrapper{
+    width: 75%;
     margin: 0 auto;
-    padding: 3rem;
+    /* padding: 0 3rem; */
 }
-.imageDiv{
+.secondSectionContainer{
+    /* width: 68%;
+    margin: 0 auto;
+    padding: 3rem; */
+    padding: 3rem 0;
+    border-bottom: 1px solid #eee;
+}
+/* .imageDiv{
     padding: 12px 24px;
-}
+} */
 .imageDiv img{
    opacity: 0.75;
 }
+.writingSection h1,h5{
+    text-align: center;
+}
+.writingSection h1{
+    /* padding: 1rem 1rem 3rem ; */
+    margin: 1rem 0 2rem;
+}
+.writingSection h5{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin: 3rem 0 1rem;
+}
+.writingSection p{
+    font-family: "Times New Roman", Georgia, Serif;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: justify;
+}
+.upperPara{
+    margin-bottom: 1rem;
+}
+.upperSpan {
+    background-color: #F1F1F1;
+    padding: 5px;
+}
+.lowerSpan{
+    color: #757575;
+}
 /* second section css ends here */
+
+/* form section css starts here */
+.formSection{
+    padding: 5rem 0;
+}
+.blueColor{
+    color: #607d8b!important;
+    font-weight: bold;
+    font-size: 18px;
+}
+.inputsContainer input{
+    width: 100%;
+    /* height: 50px; */
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 16px 8px;
+}
+ input[type="submit"]{
+    background-color: rgb(241, 241, 241);
+    color: #000;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #000;
+    color: white;
+}
 
