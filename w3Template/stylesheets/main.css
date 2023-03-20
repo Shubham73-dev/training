@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
 } */
+body{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: none;
 }
@@ -47,7 +51,7 @@ h1{
 
 /* first section css starts here */
 .banner{
-    background-image: url('../assets/images/hamburger.jpg');
+    background-image: url('./assets/hamburger.jpg');
     height: 800px;
     position: relative;
 }
@@ -143,5 +147,18 @@ h1{
 input[type="submit"]:hover{
     background-color: #000;
     color: white;
+}
+#footer p{
+    background-color: rgb(241, 241, 241);
+    text-align: center;
+    padding: 3rem;
+    color: #000;
+}
+#footer a{
+    color: #000;
+    text-decoration: underline;
+}
+#footer a:hover {
+    color: #4CAF50;
 }
 
