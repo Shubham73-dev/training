@@ -1,0 +1,65 @@
+.row:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.section{
+    width: 95%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 20%;
+    left: 3%;
+}
+.w-40{
+    width: 40%;
+}
+.w-20{
+    width: 25%;
+}
+.w-45{
+    width: 45%;
+}
+.farziColumn a{
+    position: absolute;
+    left: 15px;
+    bottom: 59px;
+    color: white;
+}
+.farziColumn{
+    position: relative;
+}
+.farziColumn h2{
+    position: absolute;
+    top: 10px;
+    left:15px;
+    color: white;
+}
+.farziColumn h3{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+    color: white;
+}
+.shoesColumn{
+    margin-left: 4%;
+}
+.shoesColumn a{
+    color: black;
+}
+.computerColumn{
+    padding-right: 2rem;
+}
+.computerColumn a{
+    color: black;
+}
