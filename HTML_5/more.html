@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        i{
+            /* color: white; */
+            font-size: 22px;
+        }
+        ul{
+            text-align: center;
+        }
+        ul li{
+            display: inline-block;
+            width: 16%;
+            /* margin: 0 -2px; */
+            /* background-color: lightblue; */
+            padding: 12px;
+            background-color: darkcyan;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 22px;
+            letter-spacing: 2px;
+            font-family: cursive;
+            display: inline-block;
+            
+
+        }
+        a:hover{
+            background-color: #000;
+            color: red;
+        }
+        li:hover>div{
+            display: block;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+        
+        .parentDown{
+            position: relative;
+        }
+        .dropdown{
+            border: 2px solid red;
+            width: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="parentDown">
+            <a class="home" href="https://www.myntra.com/shop/men">Home</a>
+            <i class="fa-solid fa-caret-down"></i>
+            <div class="dropdown">
+                <span>list 1</span>
+                <br>
+                <span>list 2</span>
+                <br>
+                <span>list 3</span>
+                <br>
+            </div>
+        </li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="https://www.myntra.com/shop/kids">Kids</a></li>
+        <li><a href="#">Offers</a></li>
+    </ul>
+
+</body>
+</html>
