@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checked_2</title>
+    <style>
+        .transit{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-duration: 5s;
+        }
+        .transit:hover{
+            width: 100%;
+        }
+        #animate:checked ~ .transit{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <input type="radio" name="toggle" id="animate">
+    <label for="animate">Make animate</label>
+    <input type="radio" name="toggle" id="animateBack">
+    <label for="animateBack">remove animate</label>
+    <div class="transit"></div>
+</body>
+</html>

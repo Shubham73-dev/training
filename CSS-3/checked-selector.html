@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked</title>
+    <style>
+        .trasitionDiv{
+            transition-duration: 5s;
+            width: 200px;
+            border: 1px solid red;
+            background-color: black;
+        }
+        
+        #show:checked ~ .trasitionDiv{
+            color: white;
+        }
+
+        /* img{
+            transition-duration: 1s;
+        } */
+        /* #hide:checked ~ img{
+            opacity: 0;
+        } */
+        
+    </style>
+</head>
+<body>
+    <!-- checked selector only works with input type radio -->
+    <input type="radio" name="toggle" id="hide">
+    <label for="hide">Hide</label>
+    <input type="radio" name="toggle" id="show">
+    <label for="show">Show</label>
+    <hr>
+    <!-- <img src="./hulk.gif" alt="img"> -->
+    <div class="trasitionDiv">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam saepe quaerat vero explicabo quod odit ducimus quis mollitia! Magnam quos necessitatibus commodi eveniet aliquam magni modi ullam debitis consequatur iste?</div>
+</body>
+</html>

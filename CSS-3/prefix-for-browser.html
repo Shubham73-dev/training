@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing</title>
+    <style>
+        *{
+            /* recommended */
+            box-sizing: border-box;
+            /* chrome and safari */
+            -webkit-box-sizing: border-box;
+            /* mozilla browser */
+            -moz-box-sizing: border-box;
+            /* microsoft edge */
+            -ms-box-sizing:border-box;
+            /* opera browser */
+            -o-box-sizing: border-box;
+        }
+        .col{
+            border: 1px solid;
+            width: 33%;
+            display: inline-block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <h2>heading tag</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laborum repellat dolores sapiente alias pariatur dignissimos nihil quod perferendis porro illo laboriosam fugiat atque veniam quos cum consequatur vero error.</p>
+        </div>
+        <div class="col">
+            <h2>heading tag</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laborum repellat dolores sapiente alias pariatur dignissimos nihil quod perferendis porro illo laboriosam fugiat atque veniam quos cum consequatur vero error.</p>
+        </div>
+        <div class="col">
+            <h2>heading tag</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, laborum repellat dolores sapiente alias pariatur dignissimos nihil quod perferendis porro illo laboriosam fugiat atque veniam quos cum consequatur vero error.</p>
+        </div>
+    </div>
+</body>
+</html>
