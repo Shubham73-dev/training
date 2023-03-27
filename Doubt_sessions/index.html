@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            color: #fff;
+            font-size: 22px;
+            padding: 1rem;
+        }
+        a:hover{
+            background-color: #ccc;
+            color: #000;
+        }
+        #header{
+            background-color: #000;
+        }
+        .dropDownParent{
+            display: inline-block;
+            position: relative;
+        }
+        .dropDownParent i{
+            color: white;
+        }
+        .dropDown{
+            display: none;
+            background-color: #000;
+        }
+        .dropDown a{
+            display: block;
+        }
+        .dropDownParent:hover .dropDown{
+            display: block;
+            position: absolute;
+        }
+
+        /* .parent{
+            height: 20px;
+            width: 50px;
+            background-color: brown;
+            border: 1px solid;
+            position: relative;
+        }
+        .child{
+            height: 50px;
+            width: 100px;
+            background-color: darkcyan;
+        } */
+    </style>
+</head>
+<body>
+    <header id="header">
+        <!-- <a href="#">Home</a>
+        <a href="#">Band</a>
+        <a href="#">Tour</a>
+        <a href="#">Contact</a> -->
+
+        <div class="dropDownParent">
+            <a href="#">Home &nbsp;
+            <i class="fa-solid fa-download"></i></a>
+            <div class="dropDown">
+                <a href="#">list_1</a>
+                <a href="#">list_2</a>
+                <a href="#">list_3</a>
+            </div>
+        </div>
+        <div class="dropDownParent">
+            <a href="#">Band</a>
+            &nbsp;
+            <i class="fa-solid fa-download"></i>
+            <div class="dropDown">
+                <a href="#">Merchandise</a>
+                <a href="#">Extras</a>
+                <a href="#">Medias</a>
+            </div>
+        </div>
+        <div class="dropDownParent">
+            <a href="#">Tour</a>
+            &nbsp;
+            <i class="fa-solid fa-download"></i>
+            <div class="dropDown">
+                <a href="#">Merchandise</a>
+                <a href="#">Extras</a>
+                <a href="#">Medias</a>
+            </div>
+        </div>
+        <div class="dropDownParent">
+            <a href="#">Media</a>
+            &nbsp;
+            <i class="fa-solid fa-download"></i>
+            <div class="dropDown">
+                <a href="#">Merchandise</a>
+                <a href="#">Extras</a>
+                <a href="#">Medias</a>
+            </div>
+        </div>
+        <div class="dropDownParent">
+            <a href="#">More</a>
+            &nbsp;
+            <i class="fa-solid fa-download"></i>
+            <div class="dropDown">
+                <a href="#">Merchandise</a>
+                <a href="#">Extras</a>
+                <a href="#">Medias</a>
+            </div>
+        </div>
+
+    </header>
+    <!-- <div class="parent">
+        <button>click</button>
+        <div class="child"></div>
+    </div> -->
+</body>
+</html>
