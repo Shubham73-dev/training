@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <style>
+      .banner{
+        height: 600px;
+        border: 2px solid;
+        background-repeat: no-repeat;
+        background-image: url(./assets/Captain-america-1.jpg), 
+                          url(./assets/iron_man.jpeg),
+                          url(./assets/spiderman.jpg),
+                          url(./assets/thor.jpeg),
+                          url(./assets/hulk.jpeg),
+                          url(./assets/balck_widow.jpeg);
+        /* background-size: 33.33% 50%; */
+        /* background-position: top left,top center,top right,bottom left,bottom center,bottom right; */
+        /* positioning-cordinate = 100/(n-1) --> so for 3 image at one row we get result at 50% */ 
+        /* background-position: 0% 0%,50% 0%,100% 0%, 0% 100%,50% 100%,100% 100%; */
+
+        /* calculation for x-axis: 100/(2-1) = 100% */
+        /* calculation for y-axis: 100/(3-1) = 50% */
+        background-size: 50% 33.33%;
+        background-position: 0% 0%, 100% 0%,0% 50%,100% 50%,0% 100%,100% 100%;
+      }  
+    </style>
+</head>
+<body>
+    <div class="banner">
+    </div>
+</body>
+</html>
