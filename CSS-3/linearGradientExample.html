@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            /* height: 100vh; */
+            border: 1px solid black;
+            position: relative;
+            /* background-image: linear-gradient(90deg,orange,rgba(255,255,255,0.5),green); */
+            background-color: rgba(0, 0, 0,0.5);
+            height: 50vh;
+            width: 500px;
+            cursor: pointer;
+        }
+        .demo:hover{
+            background-color: rgba(0, 0, 0, 0);
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            /* left: 40%; */
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <img src="./assets/dhoni.jpg" alt="dhoni">
+    </div>
+</body>
+</html>
