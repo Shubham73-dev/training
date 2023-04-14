@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* div{
+        border: 1px solid red; */
+        /* height: 100vh; */
+        /* height: calc(100vh - 100px);
+        width: calc(100vw - 100px);
+    } */
+    /* .top{
+        height: 50px;
+        background-color: rebeccapurple;
+    }
+    .bottom{
+        border: 1px solid red;
+        background-color: green;
+        height: calc(95vh - 50px);
+    } */
+    .row::after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .first{
+        width: 30%;
+        background-color: brown;
+        height: 200px;
+    }
+    .second{
+        width: calc(100% - 30%);
+        background-color: blueviolet;
+        height: 200px;
+    }
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+</style>
+<body>
+    <!-- <h1>calc()</h1> -->
+    <!-- <div class="top"></div>
+    <div class="bottom"></div> -->
+    <div class="row">
+        <div class="first left"></div>
+        <div class="second right"></div>
+    </div>
+</body>
+</html>

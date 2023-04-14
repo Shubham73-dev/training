@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50%;
+            height: 50vh;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+            /* filter: blur(2px); */
+            cursor: pointer;
+        }
+        img:hover{
+            /* filter: blur(0px); */
+            /* filter: brightness(1.5); */
+            /* filter: contrast(5); */
+            /* filter: drop-shadow(6px); works same as box-shadow */
+            filter: grayscale(0.6);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./assets/dhoni.jpg" alt="">
+    </div>
+</body>
+</html>
