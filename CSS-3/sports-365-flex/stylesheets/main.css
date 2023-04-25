@@ -4,6 +4,9 @@
 body{
     margin: 0;
 }
+h3{
+    font-size: 14px;
+}
 .flex-layout{
     display: flex;
 }
@@ -28,7 +31,10 @@ body{
 a{
     text-decoration: none;
 }
-
+ul{
+    list-style: none;
+    padding: 0;
+}
 
 /* header section css starts from here */
 #header .topRow{
@@ -110,3 +116,80 @@ a{
 /* .class_name::after{
     content:'sef'
 } */
+/*  css for header section ends here */
+/* ******************************************************************************************* */
+/*  css for naigation section starts from here */
+
+.menuBar {
+    display: flex;
+    column-gap: 1rem;
+    background-color: #F0F0F0;
+    padding-left: 15px !important;
+}
+.menuBar .menuList {
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+.menuBar .menuList:hover .drop-down-division {
+   display: block;
+   background-color: white;
+}
+/* .menuBar .menuList:hover {
+   background-color: #000;
+   color: #fff;
+} */
+.menuBar .menuList a{
+   color: #000;
+}
+.menuBar .menuList a:visited{
+   color: #000;
+}
+/* .menuBar .menuList a:hover{
+   color: #fff !important;
+} */
+.menuBar .menuList:hover .menu-anchor {
+    color: white !important;
+}
+.drop-down-container{
+    padding: 20px;
+    column-gap: 1rem;
+}
+.drop-down-container h3{
+    width: max-content;
+    /* margin: 0; */
+}
+.drop-down-division {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* padding: 1rem; */
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px rgba(0,0,0,.19);
+    border-radius: 5px;
+    display: none;
+}
+.drop-down-container ul{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1rem; */
+}
+.drop-down-container ul li{
+    width: max-content;
+}
+.drop-down-container ul li a,.drop-down-container ul h3{
+    padding:15px 6rem  10px 8px;
+    display: block;
+}
+.drop-down-container ul li:hover,.drop-down-container ul h3:hover{
+    background-color: #e8e8e8;
+}
+.padded-column {
+    padding: 1rem;
+}
+
+
+
+
