@@ -1,0 +1,218 @@
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+h3{
+    font-size: 14px;
+}
+.flex-layout{
+    display: flex;
+}
+.end{
+    justify-content: end;
+}
+.vertical-center{
+    align-items: center;
+}
+.row{
+    display: flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.center-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* header section css starts from here */
+#header .topRow{
+    justify-content: space-between;
+    padding-top: 14px;
+}
+#header form {
+    width: 95%;
+}
+#header form input[type="text"]{
+    width: 75%;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    outline: none;
+    border-radius: 6px;
+    padding-left: 19px;
+}
+#header form input[type="text"]::placeholder{
+    color: rgb(160, 160, 160);
+}
+#header form input[type="submit"]{
+    width: 20%;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0687c0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: none;
+}
+.logo{
+    width: 11%;
+    /* border: 1px solid red; */
+    justify-content: flex-start;
+    margin-left: 12px;
+}
+.logo img{
+    width: 70%;
+}
+.searchMenu{
+    width: 45%;
+    /* border: 1px solid darkgreen; */
+}
+.login-cart{
+    width: 28%;
+    /* border: 1px solid darkblue; */
+    justify-content: end;
+    padding-right: 3rem;
+}
+.login-cart-row{
+    column-gap: 1.2rem;
+    /* align-items: center; */
+}
+.divider {
+    width: 2px;
+    height: 18px;
+    background-color: rgb(153, 153, 153);
+}
+.redirectLogin{
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+}
+.cart {
+    position: relative;
+}
+.cart i{
+    font-size: 28px;
+}
+.counter {
+    height: 20px;
+    width: 20px;
+    background-color: #FEDC19;
+    border-radius: 50%;
+    position: absolute;
+    top: -14px;
+    left: 37px;
+}
+/* .class_name::after{
+    content:'sef'
+} */
+/*  css for header section ends here */
+/* ******************************************************************************************* */
+/*  css for naigation section starts from here */
+nav{
+    position: relative;
+}
+.menuBar {
+    display: flex;
+    column-gap: 1rem;
+    background-color: #F0F0F0;
+    padding-left: 15px !important;
+}
+.menuBar .menuList {
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    /* position: relative; */
+}
+/* .menuBar .menuList:not(:nth-child(2)) {
+    position: relative;
+} */
+.menuBar .menuList:not(:last-child) {
+    position: relative;
+}
+.last-drop-down-container{
+    left: 18% !important;
+    min-width: 1212.850px !important;
+}
+.menuBar .menuList:hover .drop-down-division {
+   display: block;
+   background-color: white;
+}
+.menuBar .menuList:hover {
+   background-color: #000;
+   color: #fff;
+}
+.menuBar .menuList a{
+   color: #000;
+}
+.menuBar .menuList a:visited{
+   color: #000;
+}
+/* .menuBar .menuList a:hover{
+   color: #fff !important;
+} */
+.menuBar .menuList:hover .menu-anchor {
+    color: white !important;
+}
+.drop-down-container{
+    padding: 20px;
+    column-gap: 1rem;
+}
+.drop-down-container h3{
+    width: max-content;
+    /* margin: 0; */
+}
+.drop-down-division {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* padding: 1rem; */
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 5px rgba(0,0,0,.19);
+    border-radius: 5px;
+    display: none;
+}
+.drop-down-container ul{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 1rem; */
+    color: #000;
+}
+.drop-down-container ul li{
+    width: max-content;
+}
+.drop-down-container ul li a,.drop-down-container ul h3{
+    padding:15px 6rem  10px 8px;
+    display: block;
+}
+.drop-down-container ul li:hover,.drop-down-container ul h3:hover{
+    background-color: #e8e8e8;
+}
+.padded-column {
+    padding: 1rem;
+}
+.cities .city-list{
+    padding: 15px 18px 10px;
+    width: 12rem;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    border-color: transparent rgba(221, 221, 221, 221) rgba(221, 221, 221, 221) transparent;
+}
+.hyderabadLists{
+    display: none;
+}
+
+
