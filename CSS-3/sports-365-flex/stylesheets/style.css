@@ -1,0 +1,28 @@
+#header {
+  background-color: red;
+}
+
+#header form {
+  width: 95%;
+}
+
+#header form input[type='text'] {
+  width: 75%;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  outline: none;
+  border-radius: 6px;
+  padding-left: 19px;
+}
+
+#header form input[type="submit"] {
+  width: 20%;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0687c0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */

@@ -15,7 +15,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- customized css -->
     <link rel="stylesheet" href="./stylesheets/main.css">
+    <script src="./scripts/main.js" defer></script> 
+    <!--this defer attribute is an asynchronous behaviour*/ -->
 </head>
 
 <body>
@@ -45,6 +48,7 @@
                 </div>
             </div>
         </header>
+        <!-- main navigation starts here -->
         <nav>
             <ul class="menuBar">
                 <li class="menuList">
@@ -205,49 +209,57 @@
                     Shop By School&nbsp;<i class="fa-solid fa-caret-down"></i>
                     <div class="drop-down-division last-drop-down-container">
                         <div class="row drop-down-container">
-                            <div class="col_1">
+                            <div class="citiesParent col_1">
                                 <ul class="cities">
-                                    <li class="city-list"><span>Bangalore</span> <i class="fa-solid fa-caret-right"></i></li>
-                                    <li class="city-list"><span>Heyderabad</span> <i class="fa-solid fa-caret-right"></i></li>
+                                    <li class="city-list bangaloreDiv"><span>Bangalore</span> <i class="fa-solid fa-caret-right"></i></li>
+                                    <li class="city-list heyderabadDiv"><span>Heyderabad</span> <i class="fa-solid fa-caret-right"></i></li>
                                 </ul>
                             </div>
-                            <div class="col_2">
-                                <ul>
-                                    <li><a href="#">Sri kumaran school</a></li>
-                                    <li><a href="#">CMR NPS</a></li>
-                                    <li><a href="#">The Bridage school</a></li>
-                                    <li><a href="#">Sophia High School</a></li>
-                                    <li><a href="#">Gopalan International School</a></li>
-                                    <li><a href="#">Whitefield Global School</a></li>
-                                    <li><a href="#">Notre Dame</a></li>
-                                    <li><a href="#">RCIS</a></li>
-                                    <li><a href="#">Sri Vani School</a></li>
-                                </ul>
+                            <div id="bangList" class="bangaloreLists row col_2">
+                                <div class="col_2">
+                                    <ul>
+                                        <li><a href="#">Sri kumaran school</a></li>
+                                        <li><a href="#">CMR NPS</a></li>
+                                        <li><a href="#">The Bridage school</a></li>
+                                        <li><a href="#">Sophia High School</a></li>
+                                        <li><a href="#">Gopalan International School</a></li>
+                                        <li><a href="#">Whitefield Global School</a></li>
+                                        <li><a href="#">Notre Dame</a></li>
+                                        <li><a href="#">RCIS</a></li>
+                                        <li><a href="#">Sri Vani School</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col_3">
+                                    <ul>
+                                        <li><a href="#">Ekya School</a></li>
+                                        <li><a href="#">Inventure Academy</a></li>
+                                        <li><a href="#">VPS kengeri</a></li>
+                                        <li><a href="#">Gopalan National School</a></li>
+                                        <li><a href="#">TCIS Bangalore</a></li>
+                                        <li><a href="#">Global Academy For Learning</a></li>
+                                        <li><a href="#">Vahe Global Academy School</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col_4">
+                                    <ul>
+                                        <li><a href="#">CMR PU</a></li>
+                                        <li><a href="#">GEAR Innovative School</a></li>
+                                        <li><a href="#">Deccan International</a></li>
+                                        <li><a href="#">The Legacy School</a></li>
+                                        <li><a href="#">Global City International School</a></li>
+                                        <li><a href="#">Kensri School</a></li>
+                                        <li><a href="#">New Horizon Public School</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col_3">
-                                <ul>
-                                    <li><a href="#">Ekya School</a></li>
-                                    <li><a href="#">Inventure Academy</a></li>
-                                    <li><a href="#">VPS kengeri</a></li>
-                                    <li><a href="#">Gopalan National School</a></li>
-                                    <li><a href="#">TCIS Bangalore</a></li>
-                                    <li><a href="#">Global Academy For Learning</a></li>
-                                    <li><a href="#">Vahe Global Academy School</a></li>
-                                </ul>
-                            </div>
-                            <div class="col_4">
-                                <ul>
-                                    <li><a href="#">CMR PU</a></li>
-                                    <li><a href="#">GEAR Innovative School</a></li>
-                                    <li><a href="#">Deccan International</a></li>
-                                    <li><a href="#">The Legacy School</a></li>
-                                    <li><a href="#">Global City International School</a></li>
-                                    <li><a href="#">Kensri School</a></li>
-                                    <li><a href="#">New Horizon Public School</a></li>
-                                </ul>
-                            </div>
-                            <div class="col_5">
-                                
+                            <div id="heyList" class="hyderabadLists col_3">
+                                <div class="col_2">
+                                    <ul>
+                                        <li><a href="#">Chirec International School</a></li>
+                                        <li><a href="#">Phoenix Green International</a></li>
+                                        <li><a href="#">Glendale Academy</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -255,7 +267,61 @@
                 <!-- last drop-down menu ends here -->
             </ul>
         </nav>
+        <!-- main navigation ends here -->
+        <main>
+            <!-- first section starts here-->
+            <section class="section_1">
+                <div class="banner">
+                    <a href="https://www.sports365.in/clearance_sale" class="banner-anchor"><img src="./assets/images/banner-1.jpg" alt="banner-1"></a>                   
+                </div>
+            </section>
+            <!-- first section ends here-->
+            <!-- second section starts here -->
+            <section class="section_2">
+                <div class="banner">
+                    <a href="https://www.sports365.in/upto-60-off-on-yoga-mats.html" class="banner-anchor anchor2"><img src="./assets/images/banner-2.jpg" alt="banner-2"></a>                   
+                </div>
+            </section>
+            <!-- second section ends here -->
+            <!-- third section starts here -->
+            <section class="section_3">
+                <div class="row cardsContainer">
+                    <div class="col"><a href="#"><img src="./assets/images/banner-3.jpg" alt=""></a></div>
+                    <div class="col"><a href="#"><img src="./assets/images/banner-4.jpg" alt=""></a></div>
+                    <div class="col"><a href="#"><img src="./assets/images/banner-5.jpg" alt=""></a></div>
+                </div>
+            </section>
+            <!-- third section ends here -->
+            <!-- fourth section starts here -->
+            <section class="section_4">
+                <div class="banner">
+                    <a href="https://www.sports365.in/upto-60-off-on-yoga-mats.html" class="banner-anchor anchor2"><img src="./assets/images/banner-6.jpg" alt="banner-2"></a>                   
+                </div>
+            </section>
+            <!-- fourth section ends here -->
+            <!-- fifth section starts here -->
+            <section class="section_5">
+                <div class="banner">
+                    <a href="https://www.sports365.in/upto-60-off-on-yoga-mats.html" class="banner-anchor anchor2"><img src="./assets/images/banner-7.jpg" alt="banner-2"></a>                   
+                </div>
+            </section>
+            <!-- fifth section ends here -->
+            <!-- section sixth starts here -->
+            <section class="section_3">
+                <div class="row cardsContainer">
+                    <div class="col"><a href="#"><img src="./assets/images/banner-8.jpg" alt=""></a></div>
+                    <div class="col"><a href="#"><img src="./assets/images/banner-9.jpg" alt=""></a></div>
+                    <div class="col"><a href="#"><img src="./assets/images/banner-10.jpg" alt=""></a></div>
+                </div>
+            </section>
+            <!-- section sixth ends here -->
+        </main>
     </div>
+    <!-- JS if written on html then do mention at the end of body tag -->
+    <!-- <script>
+        console.log('THIS IS BODY JAVASCRIPT');
+    </script> -->
+    <!-- <script src="./scripts/main.js"></script> -->
 </body>
 
 </html>

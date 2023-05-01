@@ -143,6 +143,7 @@ nav{
 }
 .last-drop-down-container{
     left: 18% !important;
+    min-width: 1212.850px !important;
 }
 .menuBar .menuList:hover .drop-down-division {
    display: block;
@@ -210,6 +211,32 @@ nav{
     border: 1px solid;
     border-color: transparent rgba(221, 221, 221, 221) rgba(221, 221, 221, 221) transparent;
 }
+.hyderabadLists{
+    display: none;
+}
 
+/* section-1 css */
+.banner{
+    padding: 14px;
+}
+.banner-anchor {
+    display: block;
+}
+.banner-anchor img {
+    height: 325px;
+    width: 100%;
+}
+/* section-2 css */
+.anchor2 img{
+    height: 135px;
+}
 
+/* section-3 css */
+.section_3 img {
+    height: 358px;
+    width: 460px;
+}
+.cardsContainer {
+    justify-content: space-around;
+}
 
