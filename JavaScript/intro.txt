@@ -1,0 +1,43 @@
+JavaScript - JS is high-level interpreted language.
+             ECMA(European Computer Manufacturing Association)-Script 
+             ECMA-6
+
+Data Types in Javascript: 
+    1- Number
+    2- string
+    3- boolean
+    4- bigint
+    5- 
+
+int x ; 
+x = 'shubham'
+error
+var x; --> variable declaration
+x = 20 --> variable initialization
+const y = 10; --> we cannot overwrite const value
+y = 'ram' --> error
+**********************************************
+var x;
+undefined
+x = 1
+1
+typeof x
+'number'
+x='shubham'
+'shubham'
+typeof x
+'string'
+x = true
+true
+typeof x
+'boolean'
+x = 1000000000000000000000000000000000000000000000000000001
+1e+54
+x = 1000000000000000000000000000000000000000000000000000001n
+1000000000000000000000000000000000000000000000000000001n
+typeof x
+'bigint'
+x = 10.12
+10.12
+typeof x
+'number'
