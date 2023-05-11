@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID SYSTEM</title>
+    <style>
+        .row{
+            display: grid;
+            /* grid-template-columns: 23% 33% 13%; */
+            /* grid-template-columns: 25% 25% 25% 25%; */
+            /*FR stands for fraction & it is a unitless value */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: 100px 200px 300px; */
+            /* grid-template-columns: 1fr 2fr 3fr; */
+            /* grid-template-columns: 15rem 12rem 13rem; */
+            /* grid-template-columns: repeat(5,1fr); mostly used*/ 
+            /* grid-template-columns: repeat(4,200px); */
+            grid-template-columns: repeat(4,23%);
+            /* grid-gap */
+            /* column-gap: 1rem;
+            row-gap: 1rem; */
+            gap: 2rem 0;/* first parameter is for row-gapping value and second parameter is for column-gapping*/
+            /* gap: 1rem 1.5rem; */
+            /* justify-content: space-evenly; */
+            /* align-items: flex-start; */
+            gap: 1rem;/*it menas for both*/
+        }
+        .col{
+            border: 1px solid #000;
+            background-color: lightblue;
+            /* margin: 2rem;
+            padding: 1rem; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col col_1">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?</p>
+        </div>
+        <div class="col col_2">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore, quibusdam similique maiores cumque dolore qui veritatis enim iste impedit temporibus quis. Vero molestias distinctio cupiditate voluptate excepturi reiciendis quas culpa.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi corporis itaque, architecto aliquam dolorem repudiandae dolorum impedit sint, obcaecati maiores adipisci voluptas, ad recusandae! Maiores dicta quam id porro repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis excepturi soluta quaerat ipsam libero labore perferendis, laudantium magni optio odit officiis corrupti, ducimus perspiciatis corporis est ullam tempora repellat iure!
+            </p>
+        </div>
+        <div class="col col_3">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?</p>
+        </div>
+        <div class="col col_4">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?</p>
+        </div>
+        <div class="col col_5">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?</p>
+        </div>
+        <div class="col col_6">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?</p>
+        </div>
+        <div class="col col_7">
+            <h1>This is a Heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia corporis recusandae officiis obcaecati.
+                Voluptatibus animi magnam, corporis sit repellendus illum maxime, consequuntur, est impedit aut quis
+                repellat vitae sed saepe?</p>
+        </div>
+        
+    </div>
+</body>
+
+</html>
